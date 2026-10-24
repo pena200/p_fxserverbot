@@ -1,0 +1,271 @@
+{
+  "token": "",
+  "guildId": "",
+  "adminRoleIds": [],
+  "theme": {
+    "primary": "#00d4ff",
+    "secondary": "#0077ff",
+    "accent": "#7df9ff",
+    "success": "#00e5c3",
+    "pending": "#38bdf8",
+    "danger": "#5b7cfa",
+    "muted": "#0b3a5b"
+  },
+  "channels": {
+    "logs": "",
+    "announcements": "",
+    "general": "",
+    "welcome": "",
+    "whitelistReview": "",
+    "ticketLogs": "",
+    "chatLogs": "",
+    "dmLogs": "",
+    "botLogs": ""
+  },
+  "presets": {
+    "Server Status": "",
+    "Police Dispatch": "",
+    "Staff": ""
+  },
+  "bio": {
+    "enabled": true,
+    "description": "https://yourserver.com\n\nMade by Pena"
+  },
+  "status": {
+    "enabled": true,
+    "channelId": "",
+    "serverName": "",
+    "title": "Server Status",
+    "color": "#00d4ff",
+    "connect": "",
+    "buttonLabel": "Join server",
+    "logoUrl": "",
+    "imageUrl": "",
+    "showPlayerList": true,
+    "updateSeconds": 60
+  },
+  "presence": {
+    "enabled": true,
+    "status": "online",
+    "text": "{players}/{max} players",
+    "type": "Custom",
+    "updateSeconds": 30,
+    "texts": [
+      "{players}/{max} players online",
+      "⏱️ Up for {uptime}",
+      "🎫 Open a ticket for help"
+    ]
+  },
+  "richPresence": {
+    "enabled": true,
+    "appId": "",
+    "serverName": "",
+    "texts": [
+      "{name} | {street} | {players}/{max}",
+      "{activity} · {zone}",
+      "{vehicle} · {direction} on {street}"
+    ],
+    "updateSeconds": 5,
+    "rotateSeconds": 10,
+    "largeImage": "logo",
+    "largeText": "{server} · {players}/{max} online",
+    "smallImage": "",
+    "smallText": "{name} (ID {id})",
+    "speedUnit": "kmh",
+    "buttons": [
+      { "label": "Join server", "url": "" },
+      { "label": "Discord", "url": "" }
+    ],
+    "activities": {}
+  },
+  "logging": {
+    "channel": "botLogs",
+    "errors": true,
+    "startStop": true,
+    "commandAudit": true
+  },
+  "logJoinLeave": true,
+  "logChat": true,
+  "logServerStart": true,
+  "dmReply": {
+    "enabled": true,
+    "useEmbed": true,
+    "title": "🤖 Automated message",
+    "message": "Hi {username}! I'm a bot, so I can't have a conversation with you.\nNeed help? Open a ticket in **{server}** or contact the staff there.",
+    "footer": "{server}",
+    "color": "#00d4ff",
+    "imageUrl": "",
+    "thumbnailUrl": "",
+    "cooldownSeconds": 0,
+    "typingDelayMs": 800,
+    "forward": {
+      "enabled": true,
+      "channel": "dmLogs"
+    },
+    "maxPerMinute": 6
+  },
+  "welcome": {
+    "enabled": true,
+    "channel": "welcome",
+    "title": "Welcome to {server}!",
+    "message": "Hey {user}, glad to have you here!\nYou are member **#{memberCount}**.\n\nRead the rules and apply for the whitelist to join the city.",
+    "color": "#00d4ff",
+    "showAvatar": true,
+    "imageUrl": "",
+    "footer": "{server}",
+    "pingUser": true,
+    "dm": {
+      "enabled": true,
+      "message": "Welcome to {server}, {username}! Check the server for the rules and the whitelist panel."
+    },
+    "autoRoleIds": [],
+    "goodbye": {
+      "enabled": true,
+      "channel": "welcome",
+      "title": "",
+      "message": "**{username}** left the server. We are now {memberCount} members.",
+      "color": "#0b3a5b",
+      "showAvatar": true
+    }
+  },
+  "whitelist": {
+    "enabled": true,
+    "reviewChannel": "whitelistReview",
+    "reviewerRoleIds": [],
+    "pingRoleId": "",
+    "whitelistRoleId": "",
+    "cooldownMinutes": 30,
+    "dmApplicant": true,
+    "acceptMessage": "Your whitelist application was **accepted**. See you in the city!",
+    "denyMessage": "Your whitelist application was **denied**.",
+    "modalTitle": "Whitelist Application",
+    "colors": {
+      "pending": "#38bdf8",
+      "accepted": "#00e5c3",
+      "denied": "#5b7cfa"
+    },
+    "panel": {
+      "title": "Whitelist Application",
+      "description": "Want to join the server? Press the button below and fill in the form.\nStaff will review it and you will get a DM with the result.",
+      "buttonLabel": "Apply for Whitelist",
+      "color": "#00d4ff",
+      "imageUrl": "",
+      "footer": ""
+    },
+    "questions": [
+      {
+        "label": "In-game character name",
+        "style": "short",
+        "placeholder": "Firstname Lastname",
+        "required": true
+      },
+      {
+        "label": "Age",
+        "style": "short",
+        "placeholder": "18",
+        "required": true,
+        "maxLength": 3
+      },
+      {
+        "label": "Roleplay experience",
+        "style": "paragraph",
+        "placeholder": "Servers you played on, how long, which roles...",
+        "required": true,
+        "minLength": 30
+      },
+      {
+        "label": "Character backstory",
+        "style": "paragraph",
+        "placeholder": "Who is your character?",
+        "required": true,
+        "minLength": 50
+      },
+      {
+        "label": "Why do you want to join us?",
+        "style": "paragraph",
+        "required": true
+      }
+    ],
+    "dmOnSubmit": true,
+    "submitMessage": "We received your whitelist application. You will get a message here when staff has reviewed it.",
+    "minAccountAgeDays": 7,
+    "createThread": false
+  },
+  "tickets": {
+    "enabled": true,
+    "categoryId": "",
+    "archiveCategoryId": "",
+    "staffRoleIds": [],
+    "pingRoleId": "",
+    "logChannel": "ticketLogs",
+    "maxOpenPerUser": 1,
+    "dmUser": true,
+    "detailsLabel": "Describe your issue",
+    "welcomeMessage": "Thanks for reaching out, {user}! Staff will be with you shortly.",
+    "openDm": "Your support ticket was opened: {channel}\nStaff will reply there. You will get a message here when it is closed.",
+    "closeDm": "Your support ticket **{channel}** was closed.",
+    "colors": {
+      "open": "#00d4ff",
+      "closed": "#5b7cfa",
+      "archived": "#0b3a5b"
+    },
+    "panel": {
+      "title": "Support",
+      "description": "Need help? Pick a reason from the menu below and a private channel will be opened for you and the staff.",
+      "placeholder": "Choose a reason...",
+      "color": "#00d4ff",
+      "imageUrl": "",
+      "footer": "",
+      "thumbnailUrl": ""
+    },
+    "reasons": [
+      {
+        "label": "General question",
+        "description": "Anything about the server",
+        "emoji": "❓"
+      },
+      {
+        "label": "Player report",
+        "description": "Report a player breaking the rules",
+        "emoji": "🚨",
+        "placeholder": "Who, when, what happened, evidence..."
+      },
+      {
+        "label": "Bug / technical problem",
+        "description": "Something is broken in-game",
+        "emoji": "🐛"
+      },
+      {
+        "label": "Whitelist problem",
+        "description": "Issues with your whitelist application",
+        "emoji": "📝"
+      },
+      {
+        "label": "Ban appeal",
+        "description": "Appeal a ban or punishment",
+        "emoji": "⚖️"
+      },
+      {
+        "label": "Donations / perks",
+        "description": "Questions about donations",
+        "emoji": "💎"
+      },
+      {
+        "label": "Other",
+        "description": "Something else",
+        "emoji": "📩"
+      }
+    ],
+    "dmOnClaim": true,
+    "rating": true,
+    "transcript": {
+      "enabled": true,
+      "log": true,
+      "dmUser": true
+    },
+    "autoCloseHours": 0
+  },
+  "players": {
+    "showDiscord": true
+  }
+}

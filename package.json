@@ -1,0 +1,10 @@
+{
+  "name": "p_fxserverbot",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "discord.js": "^14.19.3"
+  },
+  "license": "MIT",
+  "author": "Pena"
+}

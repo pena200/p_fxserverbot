@@ -1,0 +1,18 @@
+module.exports = [
+  require('./say'),
+  require('./players'),
+  require('./serverinfo'),
+  require('./announce'),
+  require('./kick'),
+  require('./poll'),
+  require('./clear'),
+  require('./setbot'),
+  require('./whitelistpanel'),
+  require('./whitelist'),
+  require('./ticketpanel'),
+  require('./ticket'),
+  require('./welcometest'),
+  require('./dmtest'),
+  require('./reloadconfig'),
+  require('./help'),
+];
