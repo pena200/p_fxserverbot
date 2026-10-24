@@ -41,9 +41,6 @@ Made by **Pena**
    ```
 5. Restart the server. The bot comes online with the resource.
 
-> ⚠️ **Never commit your bot token.** Keep `"token": ""` in `config.json` and set it in `server.cfg` instead:
-> `set p_fxserverbot_token "your-token-here"`
-
 ---
 
 ## Setup
